@@ -40,7 +40,8 @@ def submit():
 
 @app.route('/score')
 def score():
-    return render_template("score.html")
+    datas=Student.query.all()
+    return render_template("score.html",datas=datas)
 
 
 

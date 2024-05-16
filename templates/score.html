@@ -4,6 +4,17 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>start</title>
+    <link rel="stylesheet" href="{{url_for('static',filename='css/style.css')}}">
+    <style>
+        table, th, td {
+            border: 1px solid black;
+            border-collapse: collapse;
+          }
+          th, td {
+            padding: 15px;
+          }
+          tr:hover {background-color: hsla(9, 100%, 64%, 0.5);}
+        </style>
 </head>
 <body bgcolor="pink">
     <h1><center>MEMORY GAME</center></h1>
@@ -23,7 +34,7 @@
                 <td>{{data.dept}}</td>
                 <td></td>
             </tr>
-            {% end for %}
+            {% endfor %}
     </center>
 </body>
 </html>
