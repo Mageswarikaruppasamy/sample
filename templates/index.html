@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Memory Game</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body bgcolor = "pink">
+    <h1><center>MEMORY GAME</center></h1><br>
+    <h3><center>Welcome to the labyrinth of the mind. Only the sharpest will emerge victorious.
+    </center></h3>
+    <br><br>
+    <center>
+    <div class="info">
+    <form action="/submit" method="POST">
+        <label for="name">Enter your name:</label><br>
+        <input type="text" name="name" id="name" required>
+        <br><br>
+        <label for="dept">Enter your department:</label><br>  
+        <input type="text" name="dept" id="dept" required>
+        <br><br>
+        <label for="year">Select your year:</label>
+        <select name="year" id="year" required>
+            <option value="1">I</option>
+            <option value="2">II</option>
+            <option value="3">III</option>
+            <option value="4">IV</option>
+        </select>
+        <br><br>
+        <a href="start.html"><input type="submit" value="SUBMIT"></a>
+    </form>
+    </div>
+    </center>
+</body>
+</html>

@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>start</title>
+</head>
+<body bgcolor="pink">
+    <h1><center>MEMORY GAME</center></h1>
+    <br>
+    <h2><center>In the Memory Universe, stars align with every match. Are you ready to create your own constellation of recollection?</center></h2>
+    <br>
+    <center>
+        <table>
+            <tr>
+                <th>NAME</th>
+                <th>DEPARTMENT</th>
+                <th>SCORE</th>
+            </tr>
+            {% for data in datas %}
+            <tr>
+                <td>{{data.name}}</td>
+                <td>{{data.dept}}</td>
+                <td></td>
+            </tr>
+            {% end for %}
+    </center>
+</body>
+</html>
